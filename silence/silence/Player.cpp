@@ -1,7 +1,7 @@
 #include "Player.h"
 #include <SFML\Window\Keyboard.hpp>
 
-Player::Player(sf::Vector2f startPos): Entity(startPos)
+Player::Player(sf::Vector2f startPos): Entity(startPos), mDown(
 {
 	mYvel = mXvel = 2;
 }
@@ -22,7 +22,6 @@ void Player::update()
 		mPos.y -= mYvel;
 	else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
 		mPos.y += mYvel;
-
 }
 void Player::render()
 {
