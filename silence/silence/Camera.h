@@ -13,6 +13,8 @@ public:
 	void update();
 private:
 	sf::View mCamera;
+	GameObject* mObj;	//Follow this! 
+	float mDelay;
 };
 
 #endif
