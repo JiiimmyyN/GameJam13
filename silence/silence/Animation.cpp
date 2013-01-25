@@ -5,14 +5,14 @@ Animation::Animation(const std::string& s, int fTick, int nrFrames):
 	d_frameTick(fTick),
 	d_nrFrames(nrFrames),
 	d_currentFrame(0),
-	d_sprite(ResourceManager::getInstance().getTexture(s))
+	d_sprite(ResourceManager::getInstance()->getTexture(s))
 {
 	
-	ResourceManager::getInstance()
+	ResourceManager::getInstance();
 
 
-	sf::IntRect textureRect(0, 0,	ResourceManager::getInstance().getTexture(s).getSize().x/d_nrFrames,
-									ResourceManager::getInstance().getTexture(s).getSize().y);
+	sf::IntRect textureRect(0, 0,	ResourceManager::getInstance()->getTexture(s).getSize().x/d_nrFrames,
+									ResourceManager::getInstance()->getTexture(s).getSize().y);
 
 	d_sprite.setTextureRect(textureRect);
 }
