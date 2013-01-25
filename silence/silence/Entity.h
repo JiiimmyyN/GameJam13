@@ -10,6 +10,7 @@ public:
 	virtual float getXpos()const;
 	virtual float getYpos()const;
 	virtual void update();
+
 private:
 	sf::Vector2f mPos;
 };
