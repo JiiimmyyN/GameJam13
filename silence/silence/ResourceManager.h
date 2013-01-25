@@ -8,13 +8,19 @@
 class ResourceManager
 {
 public:
-	ResourceManager();
-	
+
+	ResourceManager* getInstance();
+
 	sf::Texture& loadTexture();
 	sf::Texture& getTexture(std::string key);
 private:
+	ResourceManager();
+	
+
 	std::map<std::string, sf::Image> mImages;
-	std::map<std::string, sf::Textu
+	std::map<std::string, sf::Texture> mTextures;
+
+
 };
 
 #endif
