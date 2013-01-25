@@ -1,10 +1,10 @@
-
 #ifndef INCLUDED_ANIMATION
 #define INCLUDED_ANIMATION
 
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/System/Clock.hpp>
+#include <SFML/Graphics/Rect.hpp>
 #include "ImageManager.h"
 
 class ResourceManager
