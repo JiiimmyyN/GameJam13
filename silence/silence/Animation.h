@@ -1,3 +1,4 @@
+
 #ifndef INCLUDED_ANIMATION
 #define INCLUDED_ANIMATION
 
