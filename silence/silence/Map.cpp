@@ -39,7 +39,7 @@ Map::Map(size_t w, size_t h)
 	:mWidth(w)
 	,mHeight(h)
 {
-
+	
 }
 
 void Map::resize(size_t w, size_t h)

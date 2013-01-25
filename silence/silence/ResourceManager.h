@@ -9,7 +9,7 @@ class ResourceManager
 {
 public:
 
-	ResourceManager* getInstance();
+	static ResourceManager* getInstance();
 
 	sf::Texture& loadTexture(std::string key, std::string file, sf::IntRect imageRect);
 	sf::Texture& getTexture(std::string key);
