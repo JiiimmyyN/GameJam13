@@ -1,5 +1,6 @@
 #include "EntityManager.h"
 
+
 EntityManager* EntityManager::mEM = 0;
 
 
@@ -29,9 +30,8 @@ void EntityManager::Add(Entity* Ent){
 
 void EntityManager::Draw() {
 
-	for(EntityVector::size_type i = 0; i < mEntities.size(); i++){
-
-		mEntities[i]->draw();
+	for(EntityVector::iterator i = mEntities.begin(); i != mEntities.end(); i++){
+		(*i)->render();
 	}
 }
 
@@ -59,6 +59,12 @@ void EntityManager::Collision(){
 	for(EntityVector::size_type i = 0; i<mEntities.size();i++){
 		for(EntityVector::size_type j = 0; j<mEntities.size();j++){
 
+			if(mEntities[i]->isID("Enemy") ==  mEntities[j]->isID("Friend") && mEntities[i]->getColbox().intersects(mEntities[j]->getColbox()){
+				mEntities[i]->setHP(mEntities[j]->getDamage());
+			}
+
+			if(mEntities[i]->isID("Friend") ==  mEntities[j]->isID("Enemy") && mEntities[i]->getColbox().intersects(mEntities[j]->getColbox()){
+			mEntities[i]->setHP(mEntities[j]->getDamage());
 		}
 	}
 }
