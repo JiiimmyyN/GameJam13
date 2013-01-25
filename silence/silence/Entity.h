@@ -5,14 +5,16 @@
 class Entity
 {
 public:
-	Entity(void);
+	Entity(sf::Vector2f startPos);
 	virtual ~Entity(void);
-	virtual float getXpos()const;
-	virtual float getYpos()const;
+	float getXpos()const;
+	float getYpos()const;
 	virtual void update();
+	virtual void render();
+protected:
 
-private:
 	sf::Vector2f mPos;
+	float mYvel, mXvel;
 };
 
 #endif
