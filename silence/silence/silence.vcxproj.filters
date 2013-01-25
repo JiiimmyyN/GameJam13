@@ -33,11 +33,7 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="Player.cpp">
-=======
     <ClCompile Include="Map.cpp">
->>>>>>> c0bafa12d77821d818c5d1839cce9862a8ab3647
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -57,11 +53,7 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Player.h">
-=======
     <ClInclude Include="Map.h">
->>>>>>> c0bafa12d77821d818c5d1839cce9862a8ab3647
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
