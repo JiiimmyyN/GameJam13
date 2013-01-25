@@ -2,13 +2,15 @@
 #define CAMERA_H
 
 #include <SFML\Graphics\View.hpp>
+class GameObject;
 
 class Camera
 {
 public:
-	Camera(sf::Vector2f startPos);
+	Camera(GameObject* obj, sf::Vector2f startPos, float delay);
 	~Camera(void);
-	sf::View& getView()const;
+	sf::View& getView();
+	void update();
 private:
 	sf::View mCamera;
 };
