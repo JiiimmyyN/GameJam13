@@ -81,16 +81,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="WindowManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
-<<<<<<< HEAD
-=======
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="ResourceManager.h" />
->>>>>>> 1db720b1e8654d7018856cd22d98fe6a53b64a4c
     <ClInclude Include="WindowManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
