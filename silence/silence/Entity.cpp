@@ -1,7 +1,7 @@
 #include "Entity.h"
 
 
-Entity::Entity(void)
+Entity::Entity(sf::Vector2f startPos): mPos(startPos)
 {
 }
 
