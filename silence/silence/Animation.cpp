@@ -1,4 +1,3 @@
-#include "Animation.h"
 #include "ResourceManager.h"
 
 Animation::Animation(const std::string& s, int fTick, int nrFrames):
