@@ -1,10 +1,16 @@
-﻿Build started 2013-01-25 21:21:09.
+﻿Build started 2013-01-25 21:36:15.
      1>Project "C:\GameJam13\silence\silence\silence.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\silence.unsuccessfulbuild".
+         Creating "Debug\silence.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\GameJam13\SFML-2.0-rc\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Animation.cpp WindowManager.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\GameJam13\SFML-2.0-rc\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Animation.cpp Camera.cpp Entity.cpp main.cpp Map.cpp ResourceManager.cpp WindowManager.cpp
          WindowManager.cpp
+         ResourceManager.cpp
+         Map.cpp
+         main.cpp
+     1>c:\gamejam13\silence\silence\main.cpp(8): error C2512: 'Map' : no appropriate default constructor available
+         Entity.cpp
+         Camera.cpp
          Animation.cpp
      1>c:\gamejam13\silence\silence\animation.cpp(4): error C3646: 'mSprite' : unknown override specifier
      1>c:\gamejam13\silence\silence\animation.cpp(5): error C2091: function returns function
@@ -13,4 +19,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:01.03
+Time Elapsed 00:00:02.70
