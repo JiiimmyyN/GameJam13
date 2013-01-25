@@ -4,7 +4,7 @@
 
 class WindowManager{
 public:
-	static WindowManager& getInstance();
+	static WindowManager* getInstance();
 	sf::RenderWindow* getWindow();
 private:
 	~WindowManager();

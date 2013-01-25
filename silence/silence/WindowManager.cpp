@@ -7,9 +7,9 @@ WindowManager::WindowManager(){
 
 WindowManager::~WindowManager(){}
 
-WindowManager& WindowManager::getInstance(){
+WindowManager* WindowManager::getInstance(){
 	static WindowManager instance;
-	return instance;
+	return &instance;
 }
 
 sf::RenderWindow* WindowManager::getWindow(){
