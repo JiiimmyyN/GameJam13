@@ -84,7 +84,11 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="main.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="Player.cpp" />
+=======
+    <ClCompile Include="Map.cpp" />
+>>>>>>> c0bafa12d77821d818c5d1839cce9862a8ab3647
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="WindowManager.cpp" />
   </ItemGroup>
@@ -92,7 +96,11 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Entity.h" />
+<<<<<<< HEAD
     <ClInclude Include="Player.h" />
+=======
+    <ClInclude Include="Map.h" />
+>>>>>>> c0bafa12d77821d818c5d1839cce9862a8ab3647
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="WindowManager.h" />
   </ItemGroup>

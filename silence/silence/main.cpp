@@ -1,8 +1,11 @@
 #include <SFML\Graphics.hpp>
 
+#include "Map.h"
+
 
 int main()
 {
+	Map map;
 
 	sf::RenderWindow window(sf::VideoMode(1600,900),"Game");
 
@@ -15,7 +18,7 @@ int main()
 				window.close();
 		}
 		window.clear();
-
+		
 		window.display();
 	}
 }
